@@ -1,0 +1,312 @@
+/* ================== General ================== */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fdff8f;
+  color: #000000;
+}
+
+h1, h2, h3, h4, h5 {
+  word-wrap: break-word;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ================== Navbar ================== */
+.navbar {
+  transition: all 0.3s ease;
+}
+.navbar a.nav-link {
+  color: #000000 !important;
+  transition: color 0.3s;
+}
+.navbar a.nav-link:hover {
+  color: #988bdd !important;
+}
+
+/* ================== Encabezado principal ================== */
+header {
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+header .btn {
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+/* ================== Cards generales ================== */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.card img {
+  border-radius: 12px 12px 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  background: #ffffff;
+  padding: 20px;
+  border-left: 6px solid #27ae60;
+}
+.card-body h5 {
+  font-size: 1.2rem;
+  color: #145a32;
+  margin-bottom: 15px;
+}
+.card-body p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Estilo opcional pastel */
+.pastel {
+  background: #f0fdf4; /* mantuve este porque es más armonioso */
+}
+
+/* ================== Acordeón gastronomía ================== */
+.accordion-button {
+  background-color: #9fffa7;
+  color: #242222;
+  font-weight: bold;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #459396;
+}
+.accordion-body {
+  background-color: #f9f9f9;
+}
+
+/* ================== Fechas recomendadas ================== */
+section.container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+section.container h2 {
+  font-size: 2.2rem;
+  color: #145a32;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+/* ================== Testimonios ================== */
+.testimonios {
+  padding: 50px 20px;
+  background: #fdff8f;
+  text-align: center;
+  padding-bottom: 0;
+}
+.testimonios h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2e5939;
+  font-weight: bold;
+}
+.lista-testimonios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.testimonio {
+  background: #fffff9;
+  border-left: 5px solid #3b7a57;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.testimonio:hover {
+  transform: translateY(-5px);
+}
+.testimonio p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}
+.testimonio h4 {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #2e5939;
+  font-weight: 600;
+}
+
+/* ================== Formulario testimonios ================== */
+.formulario-testimonio {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #feffdc;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.formulario-testimonio h3 {
+  margin-bottom: 20px;
+  color: #2e5939;
+}
+.formulario-testimonio label {
+  display: block;
+  margin: 10px 0 5px;
+  text-align: left;
+  color: #333;
+  font-weight: 500;
+}
+.formulario-testimonio input,
+.formulario-testimonio textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+}
+.formulario-testimonio input:focus,
+.formulario-testimonio textarea:focus {
+  border-color: #3b7a57;
+  box-shadow: 0 0 4px rgba(59,122,87,0.4);
+}
+.formulario-testimonio button {
+  margin-top: 15px;
+  background: #3b7a57;
+  color: rgb(29, 28, 27);
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1rem;
+}
+.formulario-testimonio button:hover {
+  background: #2e5939;
+}
+
+/* ================== Footer ================== */
+footer {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* ================== Sección Planifica ================== */
+.planifica {
+  background-color: #fdff8f;
+  padding: 50px 20px;
+}
+
+.planifica h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #145a32;
+}
+
+/* Contenedor centrado */
+.contenedor {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ================== Formulario ================== */
+.formulario-planifica {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #feffdc;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Inputs y labels */
+.formulario-planifica .grupo {
+  margin-bottom: 15px;
+}
+
+.formulario-planifica label {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: 500;
+  text-align: left;
+}
+
+.formulario-planifica input,
+.formulario-planifica select,
+.formulario-planifica textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Focus */
+.formulario-planifica input:focus,
+.formulario-planifica select:focus,
+.formulario-planifica textarea:focus {
+  border-color: #3b7a57;
+  box-shadow: 0 0 4px rgba(59,122,87,0.4);
+}
+
+/* Botón */
+.formulario-planifica button {
+  margin-top: 15px;
+  background: #3b7a57;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.formulario-planifica button:hover {
+  background: #2e5939;
+}
+
+/* ================== Botón WhatsApp ================== */
+.btn-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  z-index: 10000;
+  transition: transform 0.2s ease-in-out;
+}
+.btn-whatsapp img {
+  width: 40px;
+  height: 40px;
+}
+.btn-whatsapp:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 576px) {
+  #btnWhatsapp {
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+  }
+  #btnWhatsapp img {
+    width: 100%;
+    height: auto;
+  }
+}
+

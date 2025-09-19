@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selva del Perú</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/estilo.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow sticky-top" style="background-color: #145a32">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Selva del Perú 🌿</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../pagina_principal/">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../poyectoityf/regiones/costa.html">Costa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Sierra</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../alexa/">Selva</a></li>
+                    <li class="nav-item">
+              <a class="nav-link" href="../yesly/nosotras.html">Nosotras</a>
+            </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <!-- Encabezado -->
+<header class="text-center text-black p-5" style="background: url('selva.jpg') center center/cover no-repeat; height: 400px;">
+    <h1 class="fw-bold">Selva Peruana</h1>
+    <p class="lead">Descubre la magia, cultura y biodiversidad de la Amazonía</p>
+    <a href="#planifica" class="btn btn-light">Planifica tu viaje</a>
+</header>
+
+    <!-- Destinos -->
+    <section class="container py-5">
+        <h2 class="text-center fw-bold mb-4" style="color: #145a32">Destinos Destacados</h2>
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+                    <img src="../ale.jpeg" class="card-img-top" alt="Kuélap" />
+                    <div class="card-body">
+                        <h5 class="fw-bold">Amazonas – Fortaleza de Kuélap</h5>
+                        <p>Impresionante ciudadela de piedra construida por los Chachapoya.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+                    <img src="../ff.jpg" class="card-img-top" alt="Catarata de Ahuashiyacu" />
+                    <div class="card-body">
+                        <h5 class="fw-bold">San Martín – Catarata de Ahuashiyacu</h5>
+                        <p>Cascada de 40 m rodeada de exuberante vegetación en Tarapoto.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+                    <img src="../ll.jpg" class="card-img-top" alt="Cueva de las Lechuzas" />
+                    <div class="card-body">
+                        <h5 class="fw-bold">Huánuco – Cueva de las Lechuzas</h5>
+                        <p>Ubicada en Tingo María, hábitat de aves nocturnas y murciélagos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+                    <img src="../pas.jpg" class="card-img-top" alt="Oxapampa" />
+                    <div class="card-body">
+                        <h5 class="fw-bold">Pasco – Oxapampa</h5>
+                        <p>Conocida por su herencia austro-alemana y bellos paisajes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+                    <img src="../kk.jpg" class="card-img-top" alt="Satipo" />
+                    <div class="card-body">
+                        <h5 class="fw-bold">Junín – Valle de Satipo</h5>
+                        <p>La “Tierra de la eterna primavera”, rica en cultura y naturaleza.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+                    <img src="../ññ.jpg" class="card-img-top" alt="Pacaya Samiria" />
+                    <div class="card-body">
+                        <h5 class="fw-bold">Loreto – Reserva Pacaya Samiria</h5>
+                        <p>Llamada la “selva de los espejos” por el reflejo de sus aguas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+                    <img src="../dd.jpg" class="card-img-top" alt="Yarinacocha" />
+                    <div class="card-body">
+                        <h5 class="fw-bold">Ucayali – Laguna Yarinacocha</h5>
+                        <p>Ubicada en Pucallpa, ideal para paseos en bote y relax.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Gastronomía -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">🍽️ Gastronomía de la Selva por Departamentos</h2>
+        <div class="accordion" id="gastronomiaSelva">
+
+            <!-- Amazonas -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAmazonas">
+                   <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#amazonas" aria-expanded="true" aria-controls="amazonas">
+    Amazonas
+</button>
+
+                </h2>
+                <div id="amazonas" class="accordion-collapse collapse show" data-bs-parent="#gastronomiaSelva">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Patarashca de bagre.</li>
+                            <li>Juane de arroz con gallina.</li>
+                            <li>Caldo de motelo (tortuga).</li>
+                            <li>Masato (bebida de yuca fermentada).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loreto -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingLoreto">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#loreto">
+                        Loreto
+                    </button>
+                </h2>
+                <div id="loreto" class="accordion-collapse collapse" data-bs-parent="#gastronomiaSelva">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Juane tradicional.</li>
+                            <li>Tacacho con cecina.</li>
+                            <li>Patarashca de pescado.</li>
+                            <li>Inchicapi (sopa de gallina con maní y yuca).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- San Martín -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSanMartin">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#sanmartin">
+                        San Martín
+                    </button>
+                </h2>
+                <div id="sanmartin" class="accordion-collapse collapse" data-bs-parent="#gastronomiaSelva">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Tacacho con cecina y chorizo.</li>
+                            <li>Juane de yuca.</li>
+                            <li>Cecina ahumada de cerdo.</li>
+                            <li>Ensalada de chonta (palmito).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ucayali -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingUcayali">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#ucayali">
+                        Ucayali
+                    </button>
+                </h2>
+                <div id="ucayali" class="accordion-collapse collapse" data-bs-parent="#gastronomiaSelva">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Timbuche (caldo de pescado fresco).</li>
+                            <li>Patarashca de doncella o paiche.</li>
+                            <li>Juane regional.</li>
+                            <li>Chapo (bebida de plátano maduro).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Madre de Dios -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingMadrededios">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#madrededios">
+                        Madre de Dios
+                    </button>
+                </h2>
+                <div id="madrededios" class="accordion-collapse collapse" data-bs-parent="#gastronomiaSelva">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Pescados amazónicos a la parrilla (paiche, zúngaro, dorado).</li>
+                            <li>Caldo de carachama.</li>
+                            <li>Juane de gallina.</li>
+                            <li>Refresco de copoazú o camu camu.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Huánuco -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingHuanuco">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#huanuco">
+                        Huánuco (selva alta: Tingo María)
+                    </button>
+                </h2>
+                <div id="huanuco" class="accordion-collapse collapse" data-bs-parent="#gastronomiaSelva">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Juane de gallina.</li>
+                            <li>Caldo de carachama.</li>
+                            <li>Masato.</li>
+                            <li>Pescados asados en hojas de bijao.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pasco -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingPasco">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#pasco">
+                        Pasco (Oxapampa, Villa Rica, Pozuzo)
+                    </button>
+                </h2>
+                <div id="pasco" class="accordion-collapse collapse" data-bs-parent="#gastronomiaSelva">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Juane típico.</li>
+                            <li>Patarashca.</li>
+                            <li>Caldo de carachama.</li>
+                            <li>Café y derivados (zona cafetalera reconocida).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Junín -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingJunin">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#junin">
+                        Junín (Satipo, Chanchamayo, Pichanaqui)
+                    </button>
+                </h2>
+                <div id="junin" class="accordion-collapse collapse" data-bs-parent="#gastronomiaSelva">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Juane regional.</li>
+                            <li>Tacacho con cecina.</li>
+                            <li>Caldo de gallina regional.</li>
+                            <li>Masato y refrescos de frutas (cocona, camu camu).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cusco -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCusco">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#cusco">
+                        Cusco (selva: Quillabamba, La Convención)
+                    </button>
+                </h2>
+                <div id="cusco" class="accordion-collapse collapse" data-bs-parent="#gastronomiaSelva">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Juane cusqueño.</li>
+                            <li>Tacacho con cecina.</li>
+                            <li>Caldo de carachama.</li>
+                            <li>Café de Quillabamba y cacao (chocolate artesanal).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ayacucho -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAyacucho">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#ayacucho">
+                        Ayacucho (selva: zona del VRAEM)
+                    </button>
+                </h2>
+                <div id="ayacucho" class="accordion-collapse collapse" data-bs-parent="#gastronomiaSelva">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Juane regional.</li>
+                            <li>Masato.</li>
+                            <li>Patarashca.</li>
+                            <li>Caldo de pescado amazónico.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Puno -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingPuno">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#puno">
+                        Puno (selva: Sandia, Carabaya)
+                    </button>
+                </h2>
+                <div id="puno" class="accordion-collapse collapse" data-bs-parent="#gastronomiaSelva">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Platos con café y cacao nativos.</li>
+                            <li>Patarashca de pescado de río.</li>
+                            <li>Masato.</li>
+                            <li>Juane de arroz.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cajamarca -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCajamarca">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#cajamarca">
+                        Cajamarca (selva: Jaén, San Ignacio)
+                    </button>
+                </h2>
+                <div id="cajamarca" class="accordion-collapse collapse" data-bs-parent="#gastronomiaSelva">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Cecina con tacacho.</li>
+                            <li>Caldo de gallina regional.</li>
+                            <li>Juane típico.</li>
+                            <li>Bebidas de frutas amazónicas (aguaje, cocona).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- La Libertad -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingLalibertad">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#lalibertad">
+                        La Libertad (selva: Bolívar, Pataz, parte de Sánchez Carrión)
+                    </button>
+                </h2>
+                <div id="lalibertad" class="accordion-collapse collapse" data-bs-parent="#gastronomiaSelva">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Platos con yuca, plátano y maíz amazónico.</li>
+                            <li>Pescado envuelto en hojas.</li>
+                            <li>Caldos de gallina y pescado.</li>
+                            <li>Masato.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- fechas -->
+    <section class="container py-5">
+        <h2 class="text-center fw-bold mb-4" style="color: #145a32">Fechas recomendadas</h2>
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card shadow h-100 pastel">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Amazonas (Chachapoyas, Bagua)</h5>
+                        <p>Junio: Fiesta del Raymillacta en Chachapoyas (danzas y cultura). </p>
+                        <p>Julio – Agosto: Mejor clima para visitar la fortaleza de Kuélap y cataratas como Gocta.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+
+                    <div class="card-body">
+                        <h5 class="fw-bold">Loreto (Iquitos, Nauta, Requena)</h5>
+                        <p>Junio: Fiesta de San Juan (24 de junio, la más grande de la selva).</p>
+                        <p> Julio – Septiembre: Buen clima para navegar por el Amazonas y ver fauna.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+
+                    <div class="card-body">
+                        <h5 class="fw-bold">Ucayali (Pucallpa, Atalaya, Purús)</h5>
+                        <p>Junio: Fiesta de San Juan.</p>
+                        <p> Agosto – Octubre: Buen clima para paseos en lagunas y reservas naturales.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+
+                    <div class="card-body">
+                        <h5 class="fw-bold">Junín (Satipo, Chanchamayo, Pichanaqui)</h5>
+                        <p>Abril – Septiembre: Mejor época por clima seco. </p>
+                        <p>Junio: Fiesta de San Juan. </p>
+                        <p>Julio: Fiestas Patrias con ferias regionales.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+
+                    <div class="card-body">
+                        <h5 class="fw-bold">Cusco (Quillabamba, La Convención)</h5>
+                        <p>Mayo – Octubre: Clima seco y templado en la selva cusqueña. </p>
+                        <p> Octubre: Festival del Café y Cacao en Quillabamba.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+
+                    <div class="card-body">
+                   <h5 class="fw-bold"> Puno (Sandia, Carabaya)</h5>
+                        <p> Mayo – Septiembre: Mejor clima en la selva puneña.</p>
+                        <p> Junio: Fiesta de San Juan.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Cajamarca (Jaén, San Ignacio)</h5>
+                        <p>Abril – Agosto: Buen clima para visitar cataratas y reservas.</p>
+                        <p>Junio: Fiesta de San Juan.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+
+                    <div class="card-body">
+                        <h5 class="fw-bold">La Libertad (Bolívar, Pataz, Sánchez Carrión – selva)</h5>
+
+                        <p> Mayo – Septiembre: Buen clima para explorar la selva trujillana.</p>
+                        <p> Junio: Fiesta de San Juan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Testimonios -->
+<section id="testimonios" class="testimonios py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5" style="color:#145a32;">Testimonios de Viajeros</h2>
+    
+    <div class="lista-testimonios">
+      
+      <div class="testimonio">
+        <p>"Viajar a la selva fue una de las mejores experiencias de mi vida. Disfruté del contacto con la
+          naturaleza y la amabilidad de la gente." 🌿</p>
+        <h4>— Sofía Ramírez, Lima</h4>
+      </div>
+
+      <div class="testimonio">
+        <p>"La gastronomía amazónica me sorprendió muchísimo, especialmente el juane y el tacacho con
+          cecina. ¡Volvería solo por la comida!" 🍽️</p>
+        <h4>— Diego Paredes, Cusco</h4>
+      </div>
+
+      <div class="testimonio">
+        <p>"Recomiendo visitar la selva en junio durante la Fiesta de San Juan. La cultura, las danzas y la
+          alegría son inolvidables." 🎉</p>
+        <h4>— Mariana Torres, Arequipa</h4>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+            <!-- Formulario para agregar testimonio -->
+            <div class="formulario-testimonio">
+                <h3> Deja tu Testimonio</h3>
+                <form action="https://formspree.io/f/tu-codigo" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                    <label for="mensaje">Tu testimonio:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí tu experiencia..."
+                        required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+<section id="planifica" class="planifica">
+  <div class="contenedor">
+    <h2>Planifica tu viaje</h2>
+    <form id="formulario" class="formulario-planifica">
+      <div class="grupo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required />
+      </div>
+
+      <div class="grupo">
+        <label for="destino">Destino favorito</label>
+        <select id="destino" name="destino" required>
+          <option value="">Selecciona</option>
+          <option>Amazonas - Kuélap</option>
+          <option>San Martín - Ahuashiyacu</option>
+          <option>Huánuco - Lechuzas</option>
+          <option>Pasco - Oxapampa</option>
+          <option>Junín - Satipo</option>
+          <option>Loreto - Pacaya Samiria</option>
+          <option>Ucayali - Yarinacocha</option>
+        </select>
+      </div>
+
+      <div class="grupo">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="grupo">
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad" required />
+      </div>
+
+      <div class="grupo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="3"></textarea>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+
+
+        <!-- Footer -->
+        <footer class="text-white text-center py-3" style="background-color:#145a32">
+            <p class="mb-0">© 2025 Turismo Selva del Perú - Guía de Paisajes y Destinos</p>
+        </footer>
+
+
+        <button id="btnWhatsapp" class="btn-whatsapp">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+        </button>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

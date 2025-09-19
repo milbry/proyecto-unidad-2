@@ -1,0 +1,86 @@
+:root {
+  --color-principal: #fcac93;
+  --color-secundario: #f3d5bc;
+  --color-footer: #7b3f00;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fffaf7;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, var(--color-principal), #fda085);
+}
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.3rem;
+  font-family: "Merriweather", serif;
+}
+
+/* Logo */
+.logo {
+  width: 45px;
+  border-radius: 50%;
+}
+
+/* Títulos */
+.titulo-seccion {
+  font-family: "Merriweather", serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Cards */
+.card {
+  background-color: var(--color-secundario);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+.card img {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+/* Animación aparición */
+.animar {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+.animar.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 1rem;
+  background: #fffdfb;
+  animation: zoomIn 0.5s ease;
+}
+.modal-title {
+  font-weight: 700;
+  color: var(--color-footer);
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(90deg, var(--color-footer), #5e2e00);
+}
